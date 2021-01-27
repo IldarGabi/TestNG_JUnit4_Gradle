@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class CashbackHackerTest {
-    CashbackHackService cashbackHacker = new CashbackHackService();
+    CashbackHackerService cashbackHacker = new CashbackHackerService();
 
     @Test
     public void underBoundary() {
@@ -14,12 +14,12 @@ public class CashbackHackerTest {
         assertEquals(actual, expect);
     }
 
-//    @Test
-//    public void equalsBoundary() {
-//        int actual = cashbackHacker.remain(1000);
-//        int expect = 0;
-//        assertEquals(actual, expect);
-//    }
+    @Test
+    public void equalsBoundary() {
+        int actual = cashbackHacker.remain(1000);
+        int expect = 0;
+        assertEquals(actual, expect);
+    }
 
     @Test
     public void overBoundary() {
