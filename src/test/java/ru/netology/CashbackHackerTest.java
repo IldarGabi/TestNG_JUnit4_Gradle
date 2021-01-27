@@ -14,12 +14,12 @@ public class CashbackHackerTest {
         assertEquals(actual, expect);
     }
 
-//    @Test
-//    public void EqualsBoundary() {
-//        int actual = cashbackHacker.remain(1000);
-//        int expect = 0;
-//        assertEquals(actual, expect);
-//    }
+    @Test
+    public void equalsBoundary() {
+        int actual = cashbackHacker.remain(1000);
+        int expect = 0;
+        assertEquals(actual, expect);
+    }
 
     @Test
     public void overBoundary() {
